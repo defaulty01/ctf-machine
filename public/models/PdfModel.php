@@ -5,7 +5,7 @@ class PdfModel extends Model{
 	private $data;
 
 	public function __construct($data, $file){
-		chdir($_ENV['UPLOAD_DIR'] ?? '/tmp/');
+		chdir($_ENV['UPLOAD_DIR'] ?? '/opt/pdf/uploads/');
 		$this->file = (!empty($file)) ? $file : time().'.png';
 		if(!empty($data)){
 			$this->data = $data;
