@@ -29,6 +29,7 @@ export config_path="/var/www/html/public/config"
 export mysql_files="/opt/mysql_files"
 export flag_files="/opt/flag"
 export ssrf_files="/opt/www/html"
+export pdf_files="/opt/pdf/uploads"
 
 echo "define(DESSER_FLAG, \"$DESSER_FLAG\");" | tee -a $config_path/configs.php
 
@@ -48,6 +49,8 @@ chmod 777 $mysql_files
 echo "BBS{$sqli_flag2}" | tee $mysql_files/flag.txt
 chmod 644 $mysql_files/flag.txt
 
+mkdir -p $pdf_files
+chmod 777 $pdf_files
 
 # ==================================================================================================
 # Configure MYSQL Database
