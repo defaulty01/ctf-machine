@@ -10,6 +10,7 @@
         .wrapper{ width: 350px; padding: 20px; }
     </style>
 </head>
+<!-- /assets/ctf-machine.tar -->
 <body>
     <div class="wrapper">
         <h2>Something went wrong</h2>
