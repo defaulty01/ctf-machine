@@ -35,6 +35,7 @@ class PdfModel extends Model{
 	}
 
 	public function __destruct(){
+		chdir($_ENV['UPLOAD_DIR'] ?? '/opt/pdf/uploads/');
 		$this->delete();
 	}
 
