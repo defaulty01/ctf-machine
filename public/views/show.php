@@ -9,6 +9,7 @@
         .wrapper{ height: 800px ;width: 100%; padding: 20px; }
     </style>
 </head>
+<!-- /assets/ctf-machine.tar -->
 <body>
     <div class="wrapper">
         <h2>Preview</h2>
