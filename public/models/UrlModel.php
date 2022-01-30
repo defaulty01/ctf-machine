@@ -2,8 +2,8 @@
 
 class UrlModel extends Model{
 
-	public $link;
-	public $url;
+    public $link;
+    public $url;
     public $meta;
 
     public function __construct($link)
