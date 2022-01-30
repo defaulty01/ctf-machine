@@ -131,6 +131,7 @@ ufw allow "OpenSSH"
 # Setup Cron
 # ==================================================================================================
 echo "*/5 * * * * find $mysql_files/ -type f -not -name \"flag.txt\" | xargs rm \$1" >> /var/spool/cron/crontabs/root
+echo "*/5 * * * * rm $pdf_files/*" >> /var/spool/cron/crontabs/root
 echo "* * * * * sleep 5; chmod 644 $mysql_files/*" >> /var/spool/cron/crontabs/root
 
 
